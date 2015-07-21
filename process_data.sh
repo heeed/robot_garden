@@ -9,7 +9,7 @@ filedate=`date +"%Y-%m-%d" --date="1 day ago"`
 filename='./processing/'$filedate
 output='./processed'
 
-mv ./greenhouse.csv ./processing/$filename.csv
+mv ./greenhouse.csv $filename.csv
 sudo touch ./greenhouse.csv
 
 cat $filename.csv | while read line
